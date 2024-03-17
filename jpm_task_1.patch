@@ -1,0 +1,34 @@
+From 1602497d0b40375f9ef7aeb7333b386ae08b0ebe Mon Sep 17 00:00:00 2001
+From: Taqiyy Faiz <taqiyyfaizm@gmail.com>
+Date: Sun, 17 Mar 2024 16:49:40 +0530
+Subject: [PATCH] .
+
+---
+ client_test.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/client_test.py b/client_test.py
+index 8109068..42a9c79 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -10,7 +10,7 @@ class ClientTest(unittest.TestCase):
+     """ ------------ Add the assertion below ------------ """
+     for quote in quotes:
+       self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
+-                                             (quote['top_bid']['price'] + quote['top_ask']['price']) / 2))
++                                            (quote['top_bid']['price'] + quote['top_ask']['price']) / 2))
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -20,7 +20,7 @@ class ClientTest(unittest.TestCase):
+     """ ------------ Add the assertion below ------------ """
+     for quote in quotes:
+       self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
+-                                             (quote['top_bid']['price'] + quote['top_ask']['price']) / 2))
++                                            (quote['top_bid']['price'] + quote['top_ask']['price']) / 2))
+ 
+ 
+   """ ------------ Add more unit tests ------------ """
+-- 
+2.43.0.windows.1
+
